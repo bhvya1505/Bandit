@@ -1,76 +1,76 @@
 level 0: ssh bandit0@bandit.labs.overthewire.org -p2220
 password: bandit0
 
-level0-1: ls
+level 0-1: ls
 cat readme
 password:boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 
-level1-2: ls
+level 1-2: ls
 cat ./-
 password:CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
 
-level2-3: ls
+level 2-3: ls
 cat spaces\ in\ this\ filename		(or just press tab)
 password:UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
 
-level3-4: cd inhere/
+level 3-4: cd inhere/
 cat .hidden
 password:pIwrPrtPN36QITSp3EQaw936yaFoFgAB
 
-level4-5: file inhere/*
+level 4-5: file inhere/*
 cat ./-file07
 password:koReBOKuIDDepwhWk7jZC0RTdopnAYKh
 
-level5-6: find . -readable -size 1033c !-executable
+level 5-6: find . -readable -size 1033c !-executable
 cat inhere/maybehere07/.file2
 password:DXjZPULLxYr17uwoI01bNLQbtFemEgo7
 
-level6-7: find / -user bandit7 -group bandit6 -size 33c
+level 6-7: find / -user bandit7 -group bandit6 -size 33c
 cat /var/lib/dpkg/info/bandit7.password
 password:HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
 
-level7-8: grep "millionth" data.txt
+level 7-8: grep "millionth" data.txt
 password:cvX2JJa4CFALtqS87jk27qwqGhBM9plV
 
-level8-9: sort data.txt|uniq -u
+level 8-9: sort data.txt|uniq -u
 password:UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
 
-level9-10: strings data.txt| grep "\="
+level 9-10: strings data.txt| grep "\="
 password:truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
 
-level10-11: base64 -d data.txt
+level 10-11: base64 -d data.txt
 password:IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
 
-level11-12: cat data.txt| tr [A-Za-z] [N-ZA-Mn-za-m]
+level 11-12: cat data.txt| tr [A-Za-z] [N-ZA-Mn-za-m]
 password:5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
 
-level12-13: mkdir /tmp/bhvya123
+level 12-13: mkdir /tmp/bhvya123
 cp data.txt /tmp/bhvya123
 cd /tmp/bhvya123
-file data.txt (hexdump)
+file data.txt     #(hexdump)
 xxd -r data.txt > output
-file output (gzip compressed)
+file output       #(gzip compressed)
 mv output output.gz
 gzip -d output.gz
-file output (bzip2 compressed)
+file output       #(bzip2 compressed)
 mv output output.bz2
 bzip2 -d output.bz2
-file output (gzip compressed)
+file output       #(gzip compressed)
 mv output output.gz
 gzip -d output.gz
-file output (POSIX tar archive)
+file output       #(POSIX tar archive)
 mv output output.tar
 tar xfv output.tar
-file data6.bin (bzip2 compressed)
+file data6.bin    #(bzip2 compressed)
 mv data6.bin data6.bz2
 bzip2 -d data6.bz2
-file data6 (POSIX tar archive)
+file data6        #(POSIX tar archive)
 mv data6 data6.tar
 tar xfv data6.tar
-file data8.bin (gzip compressed)
+file data8.bin    #(gzip compressed)
 mv data8.bin data8.gz
 gzip -d data8.gz
-file data8 (ASCII text)
+file data8        #(ASCII text)
 cat data8
 password:8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
 
