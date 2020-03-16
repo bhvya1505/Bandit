@@ -1,0 +1,77 @@
+Bash commands
+
+1) ssh - ssh is a program for logging into a remote machine and for executing commands on a remote machine. It is intended to provide secure encrypted commuunications between two untrusted hosts over an insecure network.
+syntax: ssh username@remote -p port
+
+2) ls - list directory contents
+syntax: ls [option]
+options: -a -> show all files, including hidden files
+	 -all -> show all files with details
+
+3) cat - concatenate files and print on the standard output
+syntax: cat [option] [file]
+
+4) cd - change the shell working directory
+syntax: cd dir/
+options: cd .. -> go to previous directory
+	 cd ~ -> go to home directory
+
+5) reset - clear terminal screen
+
+6) file - determine file type
+syntax: file name or dir/*
+
+7) find - search for files in a directory hierarchy
+syntax: find [directory] [option] [file]
+directory: /path or . for current or / for entire file system
+option: -name -> find files by name
+	-iname -> find files by name ignore case
+	-type -> d directory, f file
+	-size -> c byte, K kilobyte, M megabyte
+	-readable
+	-user
+	-group
+
+8) grep - search the named input file for lines containing the pattern
+syntax: grep [option] "pattern" [file]
+option: -v invert match
+	-w match whole word, not substring
+
+9) sort - sort lines of text files
+syntax: sort file
+
+10) uniq - report or omit repeated lines
+syntax: uniq [option] [file]
+options: -c -> count occurences
+	 -d -> only print duplicate lines
+	 -u -> only print unique lines
+
+11) strings - print strings of printable characters
+syntax: strings file
+
+12) base64 - base64 encode/decode data, encode by default
+syntax: base64 [option] [file]
+options: -d -> decode
+
+13) tr - translate or delete characters
+syntax: tr [option] set1 [set2]
+options: -d -> delete characters in set1
+	 -c -> use complement of set1
+sets: [:alnum:],[:alpha:],[:digit:],[:lower:],[:upper:],[:space:]
+
+14) mkdir
+
+15) cp
+
+16) mv
+
+17) xxd
+
+18) gzip
+
+19) bzip2
+
+20) tar
+
+
+
