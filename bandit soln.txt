@@ -66,13 +66,19 @@ mv data6.bin data6.bz2
 bzip2 -d data6.bz2
 file data6        #(POSIX tar archive)
 mv data6 data6.tar
-tar xfv data6.tar
+tar -xfv data6.tar
 file data8.bin    #(gzip compressed)
 mv data8.bin data8.gz
 gzip -d data8.gz
 file data8        #(ASCII text)
 cat data8
 password:8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+
+level 13-14: ssh -i ./sshkey.private bandit14@localhost
+cat /etc/bandit_pass/bandit14
+password:4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+
+
 
 
 

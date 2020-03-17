@@ -1,7 +1,9 @@
 Bash commands
 
 1) ssh - ssh is a program for logging into a remote machine and for executing commands on a remote machine. It is intended to provide secure encrypted commuunications between two untrusted hosts over an insecure network.
-syntax: ssh username@remote -p port
+syntax: ssh [option] [sshkey] username@remote -p port
+option: -i -> identity file which contains private key
+sshkey: file that contains the private key
 
 2) ls - list directory contents
 syntax: ls [option]
@@ -59,19 +61,37 @@ options: -d -> delete characters in set1
 	 -c -> use complement of set1
 sets: [:alnum:],[:alpha:],[:digit:],[:lower:],[:upper:],[:space:]
 
-14) mkdir
+14) mkdir - make directory
+syntax: mkdir directory
 
-15) cp
+15) cp - copy files and directories
+syntax: cp [option] file/directory [source] dest
+options: -r -> copy directories recursively
 
-16) mv
+16) mv - move or rename files
+syntax: mv file/directory [source] dest
 
-17) xxd
+17) xxd - make a hexdump or do the reverse
+syntax: xxd [option] [infile [outfile]]
+options: -r -> revert
 
-18) gzip
+18) gzip - compress or expand files
+syntax: gzip [option] file
+options: -d -> decompress
+to decompress file must have .gz extension
 
-19) bzip2
+19) bzip2 - compress or expand files
+syntax: bzip2 [option] file
+options: -d -> decompress
+to decompress file must have .bz2 extension
 
-20) tar
-
+20) tar - archive
+syntax: tar [options] file
+options: -c -> create an archive 
+	 -f -> given filename
+	 -v -> display verbose information
+	 -t -> list all files in an archive
+         -x -> extract an archive
+to extract file must have .tar extension
 
 
